@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iBlood</title>
+</head>
+<body>
 <div class="machine-wrap">
 <div class="machine">
 	<div class="machine-roof">
@@ -19,13 +27,16 @@
 		<div class="mud"></div>
 	</div>
 </div>
+<center>Aplicativo em Construção</center>
+<center>Acesse <a class="link-constru" href="https://github.com/florence-dawn/iBloodV2">https://github.com/florence-dawn/iBloodV2</a></center>
+
 </div>
 
 <style>
     body{
 	margin:0;
-	color:#444;
-	background:#ffc600;
+	color:#ffffff;
+	background:#a21322;
 	font:300 18px/18px Roboto, sans-serif;
 }
 *,:after,:before{box-sizing:border-box}
@@ -33,7 +44,16 @@
 .pull-right{float:right}
 .clearfix:after,.clearfix:before{content:'';display:table}
 .clearfix:after{clear:both;display:block}
+center{
+    margin-top:10px!important;
+}
 
+.link-constru{
+    color:#f8f8d9
+}
+.link-constru:hover, .link-constru:active{
+    color:#e0e094
+}
 .machine-wrap{
 	top:50%;
 	left:50%;
@@ -42,7 +62,7 @@
 	position:absolute;
 	margin-top:-72.5px;
 	margin-left:-237.5px;
-	border-bottom:5px solid #271e01; 
+	border-bottom:5px solid #ffffff; 
 }
 .machine{
 	width:475px;
@@ -70,8 +90,8 @@
 	height:60px;
 	bottom:-1px;
 	position:relative;
-	background:#ffc600;
-	border:15px solid #271e01;
+	background:#a21322;
+	border:15px solid #ffffff;
 	border-bottom:none;
 }
 .machine .machine-roof .machine-silencer{
@@ -80,13 +100,13 @@
 	height:12px;
 	bottom:-1px;
 	position:absolute;
-	background:#271e01;
+	background:#ffffff;
 }
 .machine .machine-roof .machine-silencer:before{
 	height:0;
 	bottom:100%;
 	width:inherit;
-	border:6px solid #271e01;
+	border:6px solid #ffffff;
 	border-top:4px solid transparent;
 	border-left:8px solid transparent;
 }
@@ -105,7 +125,7 @@
 	bottom:20px;
 	border-radius:50%;
 	position:absolute;
-	background:#271e01;
+	background:#ffffff;
 	transform:scale(0);
 	animation:moveSmoke .5s linear infinite;
 }
@@ -118,7 +138,7 @@
 	height:inherit;
 	width:inherit;
 	position:relative;
-	background:#271e01;
+	background:#ffffff;
 }
 .machine .machine-main .machine-body:before{
 	left:-15px;
@@ -132,7 +152,7 @@
 	right:15px;
 	width:35px;
 	height:41px;
-	background:#ffc600;
+	background:#a21322;
 }
 .machine .machine-main .machine-back{
 	bottom:-1px;
@@ -143,7 +163,7 @@
 .machine .machine-main .machine-back:before{
 	width:75px;
 	height:45px;
-	background:#ffc600;
+	background:#a21322;
 	border-radius:50% 50% 0 0 / 85% 85% 0 0;
 }
 .machine .machine-main .machine-back:after{
@@ -155,7 +175,7 @@
 	margin-top:-15px;
 	margin-left:-30px;
 	background:transparent;
-	border:15px solid #271e01;
+	border:15px solid #ffffff;
 }
 .machine .machine-main .machine-front{
 	z-index:1;
@@ -165,8 +185,8 @@
 	bottom:-20px;
 	border-radius:50%;
 	position:absolute;
-	background:#271e01;
-	border-top:2px solid #ffc600;
+	background:#ffffff;
+	border-top:2px solid #a21322;
 }
 .machine .machine-main .machine-front:after{
 	top:50%;
@@ -176,7 +196,7 @@
 	margin-top:-10px;
 	margin-left:-40px;
 	background:inherit;
-	border:2px solid #ffc600;
+	border:2px solid #a21322;
 }
 .machine-wrap .road{
 	right:0;
@@ -204,7 +224,7 @@
 	width:20px;
 	height:20px;
 	border-radius:4px;
-	background:#271e01;
+	background:#ffffff;
 	transform:rotate(45deg);
 }
 .machine-wrap .road .mud:before{
@@ -265,3 +285,5 @@
 	}
 }
 </style>
+</body>
+</html>
