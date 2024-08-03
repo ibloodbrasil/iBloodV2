@@ -39,6 +39,8 @@
 	margin:0;
 	color:#ffffff;
 	background:#a21322;
+	color:#ffffff;
+	background:#a21322;
 	font:300 18px/18px Roboto, sans-serif;
 }
 *,:after,:before{box-sizing:border-box}
