@@ -7,3 +7,4 @@ iBloodV2 é a segunda versão de um aplicativo open source destinado a facilitar
 ## Status do Projeto
 
 Este projeto está atualmente em construção. Estamos trabalhando ativamente para desenvolver e implementar novas funcionalidades que ajudarão a melhorar a experiência de doação de sangue para usuários em todo o brasil.
+
