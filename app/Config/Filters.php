@@ -5,6 +5,8 @@ namespace Config;
 use CodeIgniter\Config\Filters as BaseFilters;
 use CodeIgniter\Filters\Cors;
 use CodeIgniter\Filters\CSRF;
+use App\Filters\Throttle;
+use App\Filters\ThrottleAuth;
 use CodeIgniter\Filters\DebugToolbar;
 use CodeIgniter\Filters\ForceHTTPS;
 use CodeIgniter\Filters\Honeypot;
@@ -25,6 +27,8 @@ class Filters extends BaseFilters
      * or [filter_name => [classname1, classname2, ...]]
      */
     public array $aliases = [
+        'throttle'      => Throttle::class,
+        'throttleauth'  => ThrottleAuth::class,
         'csrf'          => CSRF::class,
         'toolbar'       => DebugToolbar::class,
         'honeypot'      => Honeypot::class,
@@ -68,10 +72,11 @@ class Filters extends BaseFilters
      * @var array<string, array<string, array<string, string>>>|array<string, list<string>>
      */
     public array $globals = [
-        #'before' => [
-        #    // ...
-        #    'session' => ['except' => ['login*', 'register', 'auth/a/*', 'logout']],
-        #],
+        'before' => [
+            // 'honeypot',
+            // 'csrf',
+            // 'invalidchars',
+        ],
         'after' => [
             // 'honeypot',
             // 'secureheaders',

@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+}
+
+:root {
+    --red-1: #a21322;
+    --red-2: #be041b;
+
+    --grey-2: #999999;
+    --grey-3: #d6d6d6;
+
+    --yellow-2: #facb93;
+  }
+
+
+.body-public{
+    background-color: var(--red-1)!important;
+}
+
+.card-login {
+    max-width: 350px;
+    background-color: var(--grey-3);
+    box-shadow: 1px 3px 20px #616161 !important;
+}
