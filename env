@@ -1,69 +1,43 @@
-#--------------------------------------------------------------------
-# Example Environment Configuration file
+# --------------------------------------------------------------------
+# Exemplo de Arquivo de Configuração
 #
-# This file can be used as a starting point for your own
-# custom .env files, and contains most of the possible settings
-# available in a default install.
-#
-# By default, all of the settings are commented out. If you want
-# to override the setting, you must un-comment it by removing the '#'
-# at the beginning of the line.
-#--------------------------------------------------------------------
+# Este arquivo pode ser usado como ponto de partida para seus próprios
+# arquivos .env personalizados e contém a maioria das configurações possíveis
+# disponíveis em uma instalação padrão.
+# --------------------------------------------------------------------
 
-#--------------------------------------------------------------------
-# ENVIRONMENT
-#--------------------------------------------------------------------
 
-# CI_ENVIRONMENT = production
+# --------------------------------------------------------------------
+# ENVIRONMENT (AMBIENTE)
+# Preencha com 'production' para produção e 'development' para desenv.
+# --------------------------------------------------------------------
 
-#--------------------------------------------------------------------
-# APP
-#--------------------------------------------------------------------
+CI_ENVIRONMENT = production
 
-# app.baseURL = ''
-# If you have trouble with `.`, you could also use `_`.
-# app_baseURL = ''
-# app.forceGlobalSecureRequests = false
-# app.CSPEnabled = false
+# --------------------------------------------------------------------
+# APP (APLICATIVO)
+# Informações gerais sobre o Aplicativo
+# --------------------------------------------------------------------
 
-#--------------------------------------------------------------------
-# DATABASE
-#--------------------------------------------------------------------
+app.name = iBlood
+app.baseURL = http://localhost:8080
 
-# database.default.hostname = localhost
-# database.default.database = ci4
-# database.default.username = root
-# database.default.password = root
-# database.default.DBDriver = MySQLi
-# database.default.DBPrefix =
-# database.default.port = 3306
 
-# If you use MySQLi as tests, first update the values of Config\Database::$tests.
-# database.tests.hostname = localhost
-# database.tests.database = ci4_test
-# database.tests.username = root
-# database.tests.password = root
-# database.tests.DBDriver = MySQLi
-# database.tests.DBPrefix =
-# database.tests.charset = utf8mb4
-# database.tests.DBCollat = utf8mb4_general_ci
-# database.tests.port = 3306
+# --------------------------------------------------------------------
+# DATABASE (BANCO DE DADOS)
+# Preencha abaixo, os dados para conexão com o banco de dados
+# --------------------------------------------------------------------
 
-#--------------------------------------------------------------------
-# ENCRYPTION
-#--------------------------------------------------------------------
+database.default.hostname = localhost
+database.default.database = iblood
+database.default.username = root
+database.default.password = root
+database.default.DBDriver = MySQLi
+database.default.DBPrefix =
+database.default.port = 3306
 
-# encryption.key =
+# --------------------------------------------------------------------
+# ENCRYPTION (ENCRIPTAÇÃO)
+# --------------------------------------------------------------------
 
-#--------------------------------------------------------------------
-# SESSION
-#--------------------------------------------------------------------
-
-# session.driver = 'CodeIgniter\Session\Handlers\FileHandler'
-# session.savePath = null
-
-#--------------------------------------------------------------------
-# LOGGER
-#--------------------------------------------------------------------
-
-# logger.threshold = 4
+encryption.key =

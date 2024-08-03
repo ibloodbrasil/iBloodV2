@@ -8,4 +8,9 @@ class Home extends BaseController
     {
         return view('welcome_message');
     }
+
+    public function privacy(): string
+    {
+        return view('welcome_message');
+    }
 }

@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iBlood</title>
+    <title>iBlood App</title>
 </head>
 <body>
-<div class="machine-wrap">
+	<div class="machine-wrap">
+	<center>iBlood V2 - Site em Construção</center>
 <div class="machine">
 	<div class="machine-roof">
 		<div class="machine-silencer">
@@ -27,8 +28,9 @@
 		<div class="mud"></div>
 	</div>
 </div>
-<center>Aplicativo em Construção</center>
-<center>Acesse <a class="link-constru" href="https://github.com/florence-dawn/iBloodV2">https://github.com/florence-dawn/iBloodV2</a></center>
+
+<center>Acompanhe o desenvolvimento no nosso <a class="link-constru" href="https://github.com/florence-dawn/iBloodV2">Git Hub</a></center>
+<center>Ou faça o <a class="link-constru" href="/login">Login no App</a></center>
 
 </div>
 
@@ -55,7 +57,7 @@ center{
     color:#e0e094
 }
 .machine-wrap{
-	top:50%;
+	top:40%;
 	left:50%;
 	width:475px;
 	height:145px;
@@ -65,6 +67,8 @@ center{
 	border-bottom:5px solid #ffffff; 
 }
 .machine{
+	margin-top: 20px;
+
 	width:475px;
 	height:145px;
 	padding-bottom:20px;

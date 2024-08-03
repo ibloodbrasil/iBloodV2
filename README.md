@@ -5,9 +5,9 @@
 
 ## Sobre o Projeto
 
-O iBloodV2 é um aplicativo de código aberto para agendamento de doação de sangue, inicialmente desenvolvido como projeto de TCC/PI pelos estudantes de Gestão de Tecnologia da Informação [Alberto Francisco](https://github.com/tardisblink), [Celso Antonio](https://github.com/florence-dawn/), Everton Emanuel e Geovana Pinheiro.
+O iBloodV2 é um aplicativo Brasileiro de código aberto para agendamento de doação de sangue, inicialmente desenvolvido como projeto de TCC/PI pelos estudantes de Gestão de Tecnologia da Informação [Alberto Francisco](https://github.com/tardisblink), [Celso Antonio](https://github.com/florence-dawn/), Everton Emanuel e Geovana Pinheiro.
 
-A primeira versão do aplicativo foi desenvolvida usando React Native. Contudo, a versão atual foi reescrita em PHP para melhorar a performance e a escalabilidade do sistema.
+A primeira versão do aplicativo foi desenvolvida usando React Native (framework javascript). Contudo, a versão atual foi reescrita em PHP para facilitar o acesso do usuário final, melhorar a performance e a escalabilidade do sistema.
 
 Você pode acessar o primeiro projeto em [iBloodV1](https://github.com/tardisblink/iBloodV1) e ler o artigo científico relacionado ao projeto em [iBlood - Editora Científica](https://www.editoracientifica.com.br/books/chapter/230613381).
 
@@ -51,14 +51,27 @@ Este projeto está atualmente em construção. Estamos trabalhando ativamente pa
     composer install
    ```
 
-4. **Preencher o arquivo .env**
+4. **Criar o banco de dados**
+
+   Nessa etapa você deve criar um banco de dados mysql, com o charset UTF-8.
+   Anote os dados de conexão do banco, esses dados serão necessários na próxima etapa
+
+5. **Preencher o arquivo .env**
 
    Renomear e Preencher o Arquivo de Configuração:
 
    - Renomeie o arquivo `env` para `.env`, que está localizado na pasta raiz do projeto
    - Abra o arquivo `.env` e preencha as informações necessárias conforme esperado, como url, dados para conexão com banco de dados, e-mail e etc.
 
-5. **Iniciar o Servidor Web**
+6. **Executar as migrações**
+
+   Execute o código abaixo para criar as tabelas e colunas necessárias no banco de dados:
+
+   ```bash
+    php spark migrate --all
+   ```
+
+7. **Iniciar o Servidor Web**
 
    Para testar o aplicativo localmente, você pode utilizar o servidor que vem instalado junto com o framework do projeto executando o código abaixo:
 
