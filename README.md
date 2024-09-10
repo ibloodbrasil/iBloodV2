@@ -1,6 +1,6 @@
 <h1 align="center">iBlood - Aplicativo para Doação de Sangue</h1>
 <p align="center">
-  <img src="https://github.com/tardisblink/iBloodV1/blob/main/src/Img/Logo.png](https://github.com/negrelicelso/iBloodV2/blob/main/public/assets/Logo%20Light%20GitHub.png?raw=true" alt="iBloodV2 Logo" width="300px">
+  <img src="https://github.com/negrelicelso/iBloodV2/blob/1e9a26733a2aaafeb50cce5e1b822a97ff15a7b9/public/assets/Logo%20Light%20GitHub.png?raw=true" alt="iBloodV2 Logo" width="300px">
 </p>
 
 ## Sobre o Projeto
