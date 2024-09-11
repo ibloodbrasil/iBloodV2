@@ -7,6 +7,7 @@ use CodeIgniter\Router\RouteCollection;
  */
 
 $routes->get('/autenticador', 'Home::autenticador');
+$routes->get('/', 'Home::index');
 $routes->get('/home', 'Home::index');
 $routes->get('/privacy', 'Home::privacy', ['as'=>'privacy']);
 
