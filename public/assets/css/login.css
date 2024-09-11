@@ -1,0 +1,18 @@
+:root
+{
+    --vermelho-1: #a01420;
+
+    --bege-1: #f6e7d4;
+}
+
+.botao-login
+{
+    background-color: var(--vermelho-1);
+    color: var(--bege-1);
+}
+
+.badge-iblood
+{
+    background-color: var(--vermelho-1);
+    color: var(--bege-1);
+}

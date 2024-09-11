@@ -5,11 +5,14 @@
 <?= $this->endSection() ?>
 
 <?= $this->section('main') ?>
-    <div class="container d-flex justify-content-center p-5">
-        <div class="card card-login col-12 col-md-5 shadow-sm">
+    <div class="container d-flex justify-content-center p-5"">
+        <div class="card card-login col-12 col-md-5 shadow-sm" style="background-color: var(--yellow-2)">
             <div class="card-body">
             <center>
-            <img src="https://github.com/tardisblink/iBloodV1/blob/main/src/Img/LogoF.png?raw=true" class="img-fluid" width="200px" alt="...">
+            <img src="<?= base_url('/assets/images/Logo Light.png') ?>" class="img-fluid" width="200px" alt="...">
+            <div class="justify-content-center mb-3">
+                <smal class="badge badge-iblood">APP V<?= VERSAO ?></smal>
+            </div>
             </center>
             <hr>
 
@@ -58,7 +61,7 @@
                     <?php endif; ?>
 
                     <div class="d-grid col-12 col-md-8 mx-auto m-3">
-                        <button type="submit" onclick="showLoading()" class="btn btn-dark btn-block"><?= lang('Auth.login') ?></button>
+                        <button type="submit" onclick="showLoading()" class="btn btn-dark btn-block botao-login"> <i class="fa-solid fa-arrow-right-to-bracket me-2"></i> <?= lang('Auth.login') ?></button>
                     </div>
 
                     <?php if (setting('Auth.allowMagicLinkLogins')) : ?>
