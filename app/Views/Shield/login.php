@@ -6,7 +6,7 @@
 
 <?= $this->section('main') ?>
     <div class="container d-flex justify-content-center p-5"">
-        <div class="card card-login col-12 col-md-5 shadow-sm" style="background-color: var(--yellow-2)">
+        <div class="card card-login col-12 col-md-5 shadow-sm" style="background-color: var(--bege-1)">
             <div class="card-body">
             <center>
             <img src="<?= base_url('/assets/images/Logo Light.png') ?>" class="img-fluid" width="200px" alt="...">
@@ -61,7 +61,7 @@
                     <?php endif; ?>
 
                     <div class="d-grid col-12 col-md-8 mx-auto m-3">
-                        <button type="submit" onclick="showLoading()" class="btn btn-dark btn-block botao-login"> <i class="fa-solid fa-arrow-right-to-bracket me-2"></i> <?= lang('Auth.login') ?></button>
+                        <button type="submit" onclick="showLoading()" class="btn btn-dark botao-submit"> <i class="fa-solid fa-arrow-right-to-bracket me-2"></i> <?= lang('Auth.login') ?></button>
                     </div>
 
                     <?php if (setting('Auth.allowMagicLinkLogins')) : ?>
@@ -69,13 +69,13 @@
                     <?php endif ?>
 
                     <?php if (setting('Auth.allowRegistration')) : ?>
-                        <p class="text-center"><?= lang('Auth.needAccount') ?> <a onclick="showLoading()" href="<?= url_to('register') ?>"><?= lang('Auth.register') ?></a></p>
+                        <p class="text-center"><?= lang('Auth.needAccount') ?> <a class="link-iblood" onclick="showLoading()" href="<?= url_to('register') ?>"><?= lang('Auth.register') ?></a></p>
                     <?php endif ?>
 
                 </form>
                 <hr>
                 <p class="text-center"><?= lang('Auth.checkOur') ?>
-                <a class="link-danger" href="<?= url_to('privacy') ?>" onclick="showLoading()"><?= lang('Auth.privacy') ?></a>
+                <a class="link-iblood" href="<?= url_to('privacy') ?>" onclick="showLoading()"><?= lang('Auth.privacy') ?></a>
                 </p>
             </div>
         </div>

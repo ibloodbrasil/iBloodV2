@@ -5,9 +5,15 @@
 <?= $this->section('main') ?>
 
     <div class="container d-flex justify-content-center p-5">
-        <div class="card card-login col-12 col-md-5 shadow-sm">
+        <div class="card card-login col-12 col-md-5 shadow-sm" style="background-color: var(--bege-1)">
             <div class="card-body">
-                <h5 class="card-title mb-5"><?= lang('Auth.register') ?></h5>
+                <center>
+                <img src="<?= base_url('/assets/images/Logo Light.png') ?>" class="img-fluid" width="200px" alt="...">
+                <div class="justify-content-center mb-3">
+                    <smal class="badge badge-iblood">APP V<?= VERSAO ?></smal>
+                </div>
+                </center>
+                <hr>
 
                 <?php if (session('error') !== null) : ?>
                     <div class="alert alert-danger" role="alert"><?= session('error') ?></div>
@@ -52,10 +58,10 @@
                     </div>
 
                     <div class="d-grid col-12 col-md-8 mx-auto m-3">
-                        <button type="submit" class="btn btn-primary btn-block"><?= lang('Auth.register') ?></button>
+                        <button type="submit" class="btn btn-dark botao-submit"> <i class="fa-solid fa-arrow-right-to-bracket me-2"></i> <?= lang('Auth.register') ?></button>
                     </div>
 
-                    <p class="text-center"><?= lang('Auth.haveAccount') ?> <a href="<?= url_to('login') ?>"><?= lang('Auth.login') ?></a></p>
+                    <p class="text-center"><?= lang('Auth.haveAccount') ?> <a class="link-iblood" href="<?= url_to('login') ?>"><?= lang('Auth.login') ?></a></p>
 
                 </form>
             </div>
