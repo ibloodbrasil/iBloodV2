@@ -1,0 +1,39 @@
+:root
+{
+    --vermelho-1: #a01420;
+    --vermelho-2: #be041b;
+
+    --cinza-1: #d6d6d6;
+
+    --bege-1: #f6e7d4;
+}
+
+.botao-submit
+{
+    background-color: var(--vermelho-1);
+    color: var(--bege-1);
+}
+
+.botao-submit:hover
+{
+    background-color: white;
+    color: var(--vermelho-1);
+}
+
+.badge-iblood
+{
+    background-color: var(--vermelho-1);
+    color: var(--bege-1);
+}
+
+.link-iblood
+{
+    color: var(--vermelho-1);
+    text-decoration: none;
+}
+
+.link-iblood:hover
+{
+    color: var(--vermelho-2);
+    text-decoration: underline;
+}
